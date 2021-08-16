@@ -1,0 +1,4 @@
+#Mon Aug 16 12:24:25 CDT 2021
+base.0=/Users/tank/Desktop/XRTerra_ARBeanbagToss_ATank-basic_placement/Temp/gradleOut/launcher/build/intermediates/transforms/dexMerger/release/0
+path.0=classes.dex
+renamed.0=classes.dex
