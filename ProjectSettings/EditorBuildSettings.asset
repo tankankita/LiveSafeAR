@@ -18,9 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/placeObject.unity
     guid: 419d21f2e8f384d70a235ad182205a73
   m_configObjects:
-    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 5d15af97db930a94bbb1abe5dd580826,
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 3ec6d5715b6a4d846ae1a9f9c2b166bf,
       type: 2}
-    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 462fd183d2cd64445be11d2a98a6ad01,
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 99154daeea09ff2408182eb986299942,
       type: 2}
     com.unity.addressableassets: {fileID: 11400000, guid: fd30cf7030bd342e1b45a869462e0ee0,
       type: 2}
