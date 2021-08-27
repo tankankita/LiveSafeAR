@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class SafetyAlert : MonoBehaviour
 {
-
-    public int floodStartTimer = 20;
+    private static int floodStartTimer = 20;
 
     public GameObject alertNotifcation;
 
@@ -16,6 +15,12 @@ public class SafetyAlert : MonoBehaviour
         Invoke("StartNotification",floodStartTimer);
     }
     
+
+    static public float GetFloodStartTimer()
+    {
+      return floodStartTimer;
+    }
+
     private IEnumerator SafetyCheckupPopup()
 
     {
@@ -36,7 +41,7 @@ public class SafetyAlert : MonoBehaviour
     if (yes)
     {
         alertNotifcation.SetActive(false);
-        StartCourtine(SafetyCheckupPopup);
+        StartCoroutine(SafetyCheckupPopup());
     }
 
     // else if (no)
@@ -49,7 +54,7 @@ public class SafetyAlert : MonoBehaviour
 
     private void StartNotification()
     {
-        StartCourtine(SafetyCheckupPopup)
+        StartCoroutine(SafetyCheckupPopup());
     }
 
 
@@ -64,5 +69,5 @@ public class SafetyAlert : MonoBehaviour
         yes = false;
         no = true;
     }
-
+    
 }
