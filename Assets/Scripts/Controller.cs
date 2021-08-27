@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 
 public class Controller : MonoBehaviour
@@ -61,5 +63,11 @@ public class Controller : MonoBehaviour
         characterSelection.SetActive(false);
         typeMenu.SetActive(false);
         map.SetActive(true);
+    }
+
+
+    public void charSelectionScene(){
+        SceneManager.LoadScene("CharacterSelection");
+
     }
 }
