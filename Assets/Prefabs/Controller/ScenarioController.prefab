@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &757799023558128845
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 757799023558128847}
+  - component: {fileID: 757799023558128844}
+  m_Layer: 0
+  m_Name: ScenarioController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &757799023558128847
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757799023558128845}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &757799023558128844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757799023558128845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01f2a940f9c9bb64cb47d036cd1a47b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSafeTimer: 80
+  floodTimer: 180
+  floodWarningMessageTimer: 0
+  floodDisplayTimer: {fileID: 1143852676225542831, guid: 5fa960565a9b9364ea4827c6fbb5514c,
+    type: 3}
+  safeWalkOkMessage: {fileID: 6790544328549905245, guid: a3ab9ff829f373748b5888a309c6c6f3,
+    type: 3}
+  floodWarningMessage: {fileID: 916175059692512799, guid: 7ac88d2c7b50ff241834f59841c0705f,
+    type: 3}
+  safeMessage: {fileID: 2951691688933025679, guid: f0c2d1269336834418de65d4f573c26e,
+    type: 3}
+  sweptAwayMessage: {fileID: 7464435600068789953, guid: c8a951cda7e9e1e4580463933db2f9d2,
+    type: 3}
