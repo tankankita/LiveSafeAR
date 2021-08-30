@@ -2496,6 +2496,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 757799022181965282}
+        m_MethodName: Reset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &872619933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5624,105 +5635,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.000003, y: 3.3015425, z: 8.000006}
   m_Center: {x: -0.0000034694583, y: 1.6507608, z: -0.000038097794}
---- !u!1001 &1914349870
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 757799023558128844, guid: f8c2870606a7549498d68da7265acb92,
-        type: 3}
-      propertyPath: safeMessage
-      value: 
-      objectReference: {fileID: 539007395}
-    - target: {fileID: 757799023558128844, guid: f8c2870606a7549498d68da7265acb92,
-        type: 3}
-      propertyPath: safeWalkOkMessage
-      value: 
-      objectReference: {fileID: 36311544}
-    - target: {fileID: 757799023558128844, guid: f8c2870606a7549498d68da7265acb92,
-        type: 3}
-      propertyPath: floodWarningMessage
-      value: 
-      objectReference: {fileID: 859378908}
-    - target: {fileID: 757799023558128844, guid: f8c2870606a7549498d68da7265acb92,
-        type: 3}
-      propertyPath: floodDisplayTimer
-      value: 
-      objectReference: {fileID: 991494067}
-    - target: {fileID: 757799023558128844, guid: f8c2870606a7549498d68da7265acb92,
-        type: 3}
-      propertyPath: sweptAwayMessage
-      value: 
-      objectReference: {fileID: 853090263}
-    - target: {fileID: 757799023558128844, guid: f8c2870606a7549498d68da7265acb92,
-        type: 3}
-      propertyPath: floodScenario
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 757799023558128845, guid: f8c2870606a7549498d68da7265acb92,
-        type: 3}
-      propertyPath: m_Name
-      value: ScenarioController
-      objectReference: {fileID: 0}
-    - target: {fileID: 757799023558128847, guid: f8c2870606a7549498d68da7265acb92,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 757799023558128847, guid: f8c2870606a7549498d68da7265acb92,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 757799023558128847, guid: f8c2870606a7549498d68da7265acb92,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 757799023558128847, guid: f8c2870606a7549498d68da7265acb92,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 757799023558128847, guid: f8c2870606a7549498d68da7265acb92,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 757799023558128847, guid: f8c2870606a7549498d68da7265acb92,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 757799023558128847, guid: f8c2870606a7549498d68da7265acb92,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 757799023558128847, guid: f8c2870606a7549498d68da7265acb92,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 757799023558128847, guid: f8c2870606a7549498d68da7265acb92,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 757799023558128847, guid: f8c2870606a7549498d68da7265acb92,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 757799023558128847, guid: f8c2870606a7549498d68da7265acb92,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f8c2870606a7549498d68da7265acb92, type: 3}
 --- !u!1 &1951598558 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6801467760931219145, guid: 9026247ae1cfcd94d95ab9ac88ef07cd,
@@ -6538,8 +6450,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 1567517721}
-  scenarioController: {fileID: 757799023558128845, guid: f8c2870606a7549498d68da7265acb92,
-    type: 3}
+  scenarioController: {fileID: 757799022181965283}
+--- !u!4 &757799022181965281
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757799022181965283}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &757799022181965282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757799022181965283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01f2a940f9c9bb64cb47d036cd1a47b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSafeTimer: 80
+  floodTimer: 180
+  floodDisplayTimer: {fileID: 991494067}
+  safeWalkOkMessage: {fileID: 36311544}
+  floodWarningMessage: {fileID: 859378908}
+  safeMessage: {fileID: 539007395}
+  sweptAwayMessage: {fileID: 853090263}
+--- !u!1 &757799022181965283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 757799022181965281}
+  - component: {fileID: 757799022181965282}
+  m_Layer: 0
+  m_Name: ScenarioController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &2815139980274154934
 GameObject:
   m_ObjectHideFlags: 0

@@ -98,6 +98,8 @@ public class ScenarioController : MonoBehaviour
       floodWarningMessage.SetActive(false);
       safeMessage.SetActive(false);
       sweptAwayMessage.SetActive(false);
+
+      //TODO: Back to home?
     }
 
 
