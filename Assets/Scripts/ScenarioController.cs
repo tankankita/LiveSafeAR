@@ -7,6 +7,7 @@ using TMPro;
 
 public class ScenarioController : MonoBehaviour
 {
+
     [SerializeField]
     private float walkSafeTimer;
 
@@ -34,17 +35,18 @@ public class ScenarioController : MonoBehaviour
     [SerializeField]
     private GameObject sweptAwayMessage;
 
-    public bool walkSceneario = false;
-    public bool floodScenario = false;
 
     // Start is called before the first frame update
     void Start()
     {
-      //NOTE: For testing
-      if (walkSceneario) {
+
+      int scenario = PlayerPrefs.GetInt("selectedScenario");
+
+      if (scenario == 0) {
         OnWalkSafeScenerioStart();
       }
-      if (floodScenario) {
+
+      if (scenario == 1) {
         OnFloodScenerioStart();
       }
     }
@@ -141,5 +143,4 @@ public class ScenarioController : MonoBehaviour
         sweptAwayMessage.SetActive(true);
       }
     }
-
 }

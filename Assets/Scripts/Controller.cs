@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 public class Controller : MonoBehaviour
 {
     [SerializeField] private GameObject startMenu, userSelection, characterSelection, typeMenu, map;
-    
+
 
     // Start is called before the first frame update
     void Start()
@@ -68,6 +68,14 @@ public class Controller : MonoBehaviour
 
     public void charSelectionScene(){
         SceneManager.LoadScene("CharacterSelection");
+    }
 
+
+    public void WalkSafeScenarioSelect() {
+      PlayerPrefs.SetInt("selectedScenario", 0);
+    }
+
+    public void FloodScenarioSelect() {
+      PlayerPrefs.SetInt("selectedScenario", 1);
     }
 }
