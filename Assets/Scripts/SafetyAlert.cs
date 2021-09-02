@@ -1,68 +1,73 @@
-﻿// using System.Collections;
-// using System.Collections.Generic;
-// using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-// public class SafetyAlert : MonoBehaviour
-// {
+public class SafetyAlert : MonoBehaviour
+{
+    private static int floodStartTimer = 20;
 
-//     public int floodStartTimer = 20;
+    public GameObject alertNotifcation;
 
-//     public GameObject alertNotifcation;
+    private bool yes, no;
 
-//     private bool yes, no;
-
-//     private void Start()
-//     {
-//         Invoke("StartNotification",floodStartTimer);
-//     }
+    private void Start()
+    {
+        Invoke("StartNotification",floodStartTimer);
+    }
     
-//     private IEnumerator SafetyCheckupPopup()
 
-//     {
+    static public float GetFloodStartTimer()
+    {
+      return floodStartTimer;
+    }
 
-// 	int maxWait = 10;
+    private IEnumerator SafetyCheckupPopup()
 
-// 		while (maxWait > 0)
-// 	{
-// 		yield return new WaitForSeconds(1);
-// 		maxWait--;
-// 	}
+    {
 
-//     if (maxWait <= 0)
-//     {
-//         alertNotifcation.SetActive(true);
-//     } 
+	int maxWait = 10;
 
-//     if (yes)
-//     {
-//         alertNotifcation.SetActive(false);
-//         StartCourtine(SafetyCheckupPopup);
-//     }
+		while (maxWait > 0)
+	{
+		yield return new WaitForSeconds(1);
+		maxWait--;
+	}
 
-//     // else if (no)
-//     // {
-//     //     Call911();
-//     // }
+    if (maxWait <= 0)
+    {
+        alertNotifcation.SetActive(true);
+    } 
 
-//     // }
-//     }
+    if (yes)
+    {
+        alertNotifcation.SetActive(false);
+        StartCoroutine(SafetyCheckupPopup());
+    }
 
-//     private void StartNotification()
-//     {
-//         StartCourtine(SafetyCheckupPopup);
-//     }
+    // else if (no)
+    // {
+    //     Call911();
+    // }
+
+    // }
+    }
+
+    private void StartNotification()
+    {
+        StartCoroutine(SafetyCheckupPopup());
+    }
 
 
-//     public void Yes()
-//     {
-//         yes = true;
-//         no = false;
-//     }
+    public void Yes()
+    {
+        yes = true;
+        no = false;
+    }
 
-//     public void No()
-//     {
-//         yes = false;
-//         no = true;
-//     }
-
-// }
+    public void No()
+    {
+        yes = false;
+        no = true;
+    }
+    
+}
