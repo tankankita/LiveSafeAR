@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class WarningMapMarker : MonoBehaviour
 {
     private float floodStartTimer = SafetyAlert.GetFloodStartTimer();
 
@@ -50,7 +50,7 @@ public class NewBehaviourScript : MonoBehaviour
     void Update()
     {
         timer +=1;
-        if (timer >= floodStartTimer & _destinationReached)
+        if (timer >= floodStartTimer & !_destinationReached)
         {
             MarkerMoveUp();
         }
